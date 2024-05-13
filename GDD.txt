@@ -71,7 +71,7 @@ Game Design Document
                         Ranger: Bow and Blade, Trapper, Sniper
                         Cleric: Battle Priest, Healer
                         Rare: Engineer, Gun Mage, Beastmaster, Beast, Scholar
-            Attribute Allocation: Players distribute points among six basic attributes (Strength, Intelligence, Charisma, Wisdom, Constitution, Dexterity) that affect everything from combat effectiveness to dialogue options.
+            Attribute Allocation: Players distribute points among six basic attributes (Strength, Intelligence, Charisma, Wisdom, Constitution, Dexterity) that affect everything from combat effectiveness to dialogue options. Each attribute has a minimum of 8 and a maximum of 15. They all start out with 8, and the user gets 27 points to allocate on top of that. 
             Physical Appearance and Background: AI-supported tools help players craft their character's appearance and backstory, adding layers of personalization and potential story hooks. AI could suggest backstory hooks based on the selected race/class combination, which would tie into larger world events or secrets, enhancing the narrative immersion.
                 Character Background Influence: Background stories created by the players can be used to introduce personalized quests, challenges, and interactions, making each playthrough unique.
         Customization Options: 
