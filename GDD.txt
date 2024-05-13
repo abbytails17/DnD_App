@@ -59,8 +59,18 @@ Game Design Document
     Player Characters: 
         Creation Process: 
             Race and Class Selection: Players start by choosing a race and class, each with unique traits and abilities. This choice impacts not only the gameplay mechanics but also the narrative experiences and interactions available to them.
+                Starter Races: Human, Elf, Dwarf, Orc, Goblin
+                Potential Later Races: Beast Man, Centaur, Nymph, Giant, Gnome, Halfling, Lizard Folk, Merfolk, Plant Person, Troll, Angel, Demon, Dire Beast, Dragon, Elemental, Undead
+                Starter Main Classes: Fighter, Rogue, Magician, Ranger, Cleric, Rare
             Subclasses and Advancement: As characters level up, they can specialize further into niche subclasses that offer more focused abilities and roles. For instance, a Knight could become a Paladin or Dark Knight based on their actions and choices, influencing their alignment and skills.
                 Subclass Evolution and Narrative: The evolution into subclasses should be tightly woven into the personal growth of the character and pivotal moments in the narrative. For example, a Thief might have to choose between evolving into an Assassin or a Spy based on moral choices and allegiances.
+                    Starter Subclasses: 
+                        Fighter: Knight, Swashbuckler, Barbarian, Warrior
+                        Rogue: Gambler, Ninja, Assassin, Thief 
+                        Magician: Illusionist, Inherent Gift Magician, Generalist, Theurgist
+                        Ranger: Bow and Blade, Trapper, Sniper
+                        Cleric: Battle Priest, Healer
+                        Rare: Engineer, Gun Mage, Beastmaster, Beast, Scholar
             Attribute Allocation: Players distribute points among six basic attributes (Strength, Intelligence, Charisma, Wisdom, Constitution, Dexterity) that affect everything from combat effectiveness to dialogue options.
             Physical Appearance and Background: AI-supported tools help players craft their character's appearance and backstory, adding layers of personalization and potential story hooks. AI could suggest backstory hooks based on the selected race/class combination, which would tie into larger world events or secrets, enhancing the narrative immersion.
                 Character Background Influence: Background stories created by the players can be used to introduce personalized quests, challenges, and interactions, making each playthrough unique.
