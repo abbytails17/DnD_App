@@ -1,0 +1,48 @@
+Game Design Document 
+
+1. Game Overview
+    Title: The Fantasy Without Social Anxiety
+    Concept:
+        Setting: The game's setting adapts dynamically based on AI generation, offering environments that range from mystical forests and ancient ruins to bustling cities and desolate wastelands. Each setting can be tailored to fit the narrative or player's mood and preferences, enhancing the personalization of the gameplay experience.
+        Gameplay Theme: Central themes include exploration and strategic combat, focusing on party dynamics and decision-making. The game emphasizes personal journey and character development, integrating these with the broader world events influenced by player choices and AI interactions.
+        Unique Sellings Points: The integration of advanced AI not only in quest generation but also in deeply nuanced party member AI sets this game apart. Party members are not merely followers; they are characters with their own motivations, backgrounds, and decision-making processes, which can align with or challenge the player's goals. This system introduces a new level of gameplay complexity and emotional depth.
+    Objective:
+        Main Obejctive: Given the dynamic nature of the game, the main objective can vary but generally revolves around achieving a significant personal or collective goal, which could range from uncovering lost knowledge, saving or transforming the world, to more personal achievements like resolving a character's backstory or building a legacy.
+        Secondary Objectives: These are also dynamically generated to complement the main objective, providing depth and variety. These might include building or betraying alliances, discovering hidden areas, mastering certain skills, or influencing major world events.
+    Dynamic Content: 
+        Player-Driven Settings: At the start of the game, or at specific milestones, players can choose to set their preferred scenarios or objectives. This can be done through a selection menu where they pick from a range of pre-defined settings and goals, or they can let the AI generate these dynamically.
+        AI Integration: For any settings or objectives not explicitly chosen by the player, the AI fills in the gaps based on the player’s past choices, creating a coherent storyline that reflects their preferences and actions. This system ensures that the game remains engaging and personalized, with the AI constantly adapting the world to suit the player’s evolving style and decisions.
+    Player Input and AI Adaptation:
+        Action Options Generation: During gameplay, especially in key scenarios, the AI presents the player with several action options that are tagged with emotional or strategic labels (e.g., the funniest, the saddest, the bravest). These options are generated based on the current situation, past player choices, and overarching game themes.
+        Custom Player Actions: Beyond the presented options, players can input custom actions or dialogue. The AI will interpret these inputs and seamlessly integrate them into the ongoing narrative. This allows for a high degree of creativity and personalization, making each player’s game experience unique.
+        Adaptive AI: The AI uses a combination of natural language processing and machine learning to understand and adapt to custom player inputs, refining its predictions and responses over time to align more closely with the player’s preferences and style.
+
+2. Gameplay Mechanics 
+    Core Mechanics:
+    Progression System:
+    User Interface:
+
+3. Characters 
+    Player Characters: 
+    Party Members: 
+    NPCs: 
+
+4. World and Setting 
+    World Description: 
+    Lore: 
+
+5. Story and Quests 
+    Main Narrative: 
+    Side Quests: 
+    Dialogue System: 
+
+6. Art and Audio (if applicable)
+    Visual Style: 
+    Audio: 
+
+7. Technical Specifications
+    Software Requirements: 
+    Hardware Requirements: 
+
+8. Development Timeline
+    Milestones: 
