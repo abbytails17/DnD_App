@@ -5,7 +5,7 @@ Game Design Document
     Concept:
         Setting: The game's setting adapts dynamically based on AI generation, offering environments that range from mystical forests and ancient ruins to bustling cities and desolate wastelands. Each setting can be tailored to fit the narrative or player's mood and preferences, enhancing the personalization of the gameplay experience.
         Gameplay Theme: Central themes include exploration and strategic combat, focusing on party dynamics and decision-making. The game emphasizes personal journey and character development, integrating these with the broader world events influenced by player choices and AI interactions.
-        Unique Sellings Points: The integration of advanced AI not only in quest generation but also in deeply nuanced party member AI sets this game apart. Party members are not merely followers; they are characters with their own motivations, backgrounds, and decision-making processes, which can align with or challenge the player's goals. This system introduces a new level of gameplay complexity and emotional depth.
+        Unique Sellings Points: The integration of advanced AI not only in quest generation but also in deeply nuanced party member AI sets this game apart. Party members are not merely followers; they are characters with their own motivations, backgrounds, and decision-making processes, which can align with or challenge the player's goals. This system introduces a new level of gameplay complexity and emotional depth. The AI's depth not only enhances the complexity of party members and quests but also how it dynamically influences the game world itself, such as altering environments based on player choices or the state of the world.
     Objective:
         Main Obejctive: Given the dynamic nature of the game, the main objective can vary but generally revolves around achieving a significant personal or collective goal, which could range from uncovering lost knowledge, saving or transforming the world, to more personal achievements like resolving a character's backstory or building a legacy.
         Secondary Objectives: These are also dynamically generated to complement the main objective, providing depth and variety. These might include building or betraying alliances, discovering hidden areas, mastering certain skills, or influencing major world events.
@@ -19,26 +19,143 @@ Game Design Document
 
 2. Gameplay Mechanics 
     Core Mechanics:
+        Movement and Navigation: 
+            Method: Grid based map system, limited movement per player turn, done with up/down/left/right keyboard arrows, list of interactable objects/NPCs/party members/enemies in action and/or movement range, selected by pressing Enter on keyboard
+            Features: Include pathfinding abilities, where AI calculates the optimal path to a selected location
+        Interaction Mechanics: 
+            Objects and Environment: items and environmental features are listed, and players can interact by selecting option and pressing Enter on keyboard, or entering a custom action that includes interacting with a specific object. Each interaction can yield different outcomes, such as collecting resources, unconvering secrets, or triggering events. Also, manipulating certain elements in the environment could help solve puzzles or unlock new areas, adding another layer to exploration and strategic combat.
+            NPCs: nearby/interactable NPCs are listed, interaction is done by selecting an NPC from the list and pressing Enter on keyboard. Interactions initiate dialgue, trade, quests, or other things based on context of story and character's relationship with the player. 
+            Party Memebrs: Mimic IRL (in real life) party member interactions for a TTRPG
+            Enemies: 
+        Combat System: 
+            Structure: Combat is turn-based, allowing players and AI to alternate turns, making strategic decisions to attack, defend, move, or use special abilities. 
+            Engagement: Combat engages players with tactical depth, where positioning, environmental advantages, and character skills play crucial roles.
+            Dynamics: Introduce dynamic elements such as environmental interactions during combat (e.g., pushing an enemy into a river or knocking over a torch to start a fire), which can add layers of strategy.
+        Inventory Management: 
+            Interface: Utilize a grid-based system where players use keyboard to arrange their inventory. Include categories for quick sorting (weapons, potions, resources).
+            Usability: Implement features like clickable context menus on a sidebar for quick actions like 'Use', 'Equip', or 'Discard'.
     Progression System:
+        Character Leveling: 
+            Experience Gain: Characters gain experience from completing quests, discovering new locations, and winning battles. Leveling up increases health, mana, and access to new abilities.
+            Customization: Provide players with points to allocate in a customized stat system at each level-up, allowing them to shape characters according to their preferred play style.
+        Skill Advancement: 
+            Skill Trees: Design skill trees that players can navigate to specialize their characters further. Each branch in the tree should offer distinct advantages and gameplay styles.
+            Upgrades: Skills can be upgraded through use and mastery, unlocking enhanced versions or additional effects.
+        Achievements and Milestones: 
+            Rewards System: Implement a system where achievements unlock special items, bonus content, or permanent character enhancements.
+            Milestones: Include narrative and gameplay milestones that, when reached, significantly impact the game world or unlock new game areas.
     User Interface:
+        Main HUD (Heads-Up Display): 
+            Layout: Design a clean, intuitive HUD with essential information like health, mana, mini-map, and quick slots for easy access to items or spells.
+            Adaptability: Ensure the HUD adapics dynamically to different situations, highlighting relevant information prominently during combat or exploration.
+        Menus and Sub-Menus: 
+            Character Menu: Allow players to access character stats, equipment, skills, and biography. Design it to be intuitive, with tabs for different sections.
+            Game Settings: Provide a comprehensive settings menu for adjusting game controls, graphics, sound, and other preferences.
+        Feedback Systems: 
+            Visual Indicators: Use colors, icons, and animations to communicate the status effects, skill readiness, and other game dynamics.
+            Audio Cues: Implement distinct sound effects for successful actions, alerts, and ambient sounds that enhance the game atmosphere.
 
 3. Characters 
     Player Characters: 
+        Creation Process: 
+            Race and Class Selection: Players start by choosing a race and class, each with unique traits and abilities. This choice impacts not only the gameplay mechanics but also the narrative experiences and interactions available to them.
+            Subclasses and Advancement: As characters level up, they can specialize further into niche subclasses that offer more focused abilities and roles. For instance, a Knight could become a Paladin or Dark Knight based on their actions and choices, influencing their alignment and skills.
+                Subclass Evolution and Narrative: The evolution into subclasses should be tightly woven into the personal growth of the character and pivotal moments in the narrative. For example, a Thief might have to choose between evolving into an Assassin or a Spy based on moral choices and allegiances.
+            Attribute Allocation: Players distribute points among six basic attributes (Strength, Intelligence, Charisma, Wisdom, Constitution, Dexterity) that affect everything from combat effectiveness to dialogue options.
+            Physical Appearance and Background: AI-supported tools help players craft their character's appearance and backstory, adding layers of personalization and potential story hooks. AI could suggest backstory hooks based on the selected race/class combination, which would tie into larger world events or secrets, enhancing the narrative immersion.
+                Character Background Influence: Background stories created by the players can be used to introduce personalized quests, challenges, and interactions, making each playthrough unique.
+        Customization Options: 
+            Gear and Abilities: Initial gear and abilities are tailored to the chosen race and class, influencing the starting gameplay experience. Gear can be visually customized and enhanced throughout the game.
+            Classes and Abilities Detailed: 
+                Oracle: Masters divination and can predict outcomes, altering quest paths.
+                Alchemist: Specializes in crafting potions and magical items, can create unique solutions to problems.
+                Sage: Focuses on wisdom and knowledge, unlocking special dialogue and lore discoveries.
+                Knight: Excels in melee combat and defense, can lead in battles and serve as a party tank.
+                Bard: Uses music and poetry to charm, persuade, or intimidate, influencing NPCs and combat outcomes.
+                Thief: Skilled in stealth and agility, opens unique paths through lockpicking and sneaking.
+                Assassin: Specializes in high-risk, high-reward combat tactics, effective in taking down powerful enemies quickly.
+                Healer: Essential for keeping the party alive, skilled in both healing and protective magics.
     Party Members: 
+        Recruitment: Party members are recruited through quests, shared goals, or by fulfilling certain conditions that align with their personal stories and motivations.
+        AI Personalities: Each party member has a distinct AI personality that influences their decisions in combat and interactions. These personalities also affect their loyalty and reactions to player decisions.
+        Interaction and Influence: Players can interact with party members through dialogue choices, shared quests, and strategy discussions. These interactions can lead to stronger alliances, potential conflicts, or even romance.
     NPCs: 
+        Roles and Functions: NPCs serve various functions such as merchants, quest givers, mentors, or antagonists, each adding depth and vibrancy to the game world.
+        Dynamic Interactions: NPCs remember player actions and may change their behavior accordingly. This dynamic interaction system allows for evolving relationships and realistic consequences for player choices.
+        Story Integration: NPCs are integral to the progression of both the main narrative and side quests. They provide essential information, resources, and sometimes accompany the player in key story segments.
 
 4. World and Setting 
     World Description: 
+        Geographical and Environmental Templates: 
+            Templates: Develop a variety of geographical templates that the AI can use as building blocks. These could include:
+                Forests: Different types of forests, such as temperate broadleaf, tropical rainforests, and boreal forests.
+                Mountains: Ranges with varying altitudes, climates, and mineral resources.
+                Water Bodies: Lakes, rivers, seas, and oceans with specific aquatic ecosystems.
+                Urban Areas: Cities, towns, and villages with different historical influences and architectural styles.
+            Variability: Set rules for how these templates can be modified and combined:
+                Climate Variability: The AI can adjust climate factors like temperature and rainfall, which affect flora and fauna diversity.
+                Resource Variability: Randomize the distribution of natural resources, which influences economic and strategic importance.
+                Topographical Mix: Allow the AI to combine different geographical features, like having a forested mountain range bordering a desert.
+        Cultural and Political Structures: 
+            Cultural Archetypes: Create a set of base cultural archetypes that include:
+                Government Systems: Monarchy, democracy, tribal councils, etc.
+                Social Norms: Gender roles, family structures, caste or class systems.
+                Aesthetic Styles: Unique art, architecture, and fashion that define each culture's visual and functional identity.
+            Interactions and Dynamics: Guidelines for how these cultures interact:
+                Trade Relations: How cultures trade resources and goods, affecting economic ties.
+                War and Peace: Conditions under which cultures may enter conflicts or alliances.
+                Cultural Exchange: Mechanisms for cultural influences and exchanges that evolve over time, impacting languages, religions, and technologies.
+        Economic Systems: 
+            Economic Models: Outline basic economic models:
+                Agrarian: Based primarily on agriculture and livestock.
+                Industrial: Focused on manufacturing and technology.
+                Trade-Centric: Dependent on commerce and international trade.
+            Resource Distribution: Define how resources are distributed across different regions:
+                Scarcity and Abundance: Some areas might be rich in specific resources (e.g., minerals, magical elements), while others may lack them, driving trade or conflict.
+                Accessibility: Some resources may be in hard-to-reach or dangerous areas, influencing exploration and territorial disputes.
     Lore: 
+        Mythological and Historical Frameworks: 
+            Mythological Building Blocks: Develop core myths that the AI can adapt, such as:
+                Creation Myths: How the world and its people were created.
+                Heroic Sagas: Tales of legendary heroes and their quests.
+                Cataclysms: Ancient disasters that shaped the world.
+            Historical Events Generator: Parameters for generating key historical events:
+                Eras of Peace and Conflict: Timescales for major peace periods and wars.
+                Technological and Magical Developments: Milestones in the evolution of technology and magic.
+                Rise and Fall of Civilizations: Factors that contribute to the prosperity or decline of societies.
+        Religous and Philosophical Systems: 
+            Theological Templates: Basic outlines for different types of religions and philosophical ideologies:
+                Polytheistic: Worship of multiple gods, each associated with different aspects of life and nature.
+                Monotheistic: Belief in a single, omnipotent deity.
+                Philosophical: Systems based more on moral and ethical principles than on deific worship.
+            Impact on Society: How these belief systems affect laws, daily life, and conflicts:
+                Law and Order: Religious laws that govern societal behavior.
+                Festivals and Rites: How religious practices are woven into the culture through public celebrations and private rites.
+                Religious Conflicts: Tensions that arise from differing beliefs, potentially leading to wars or schisms within societies.
 
 5. Story and Quests 
     Main Narrative: 
-    Side Quests: 
+        Dynamic Story Generation: Define the AI's parameters for generating a main narrative. This might include key narrative arcs such as discovery, conflict, resolution, and transformation that are tailored to the dynamically generated world and player choices.
+        Story Drivers: Identify primary drivers that will push the narrative forward. These could include character ambitions, world events, or mystical forces at play.
+        Player Impact: Detail how player decisions can branch the storyline and create significant changes in the game world, affecting everything from political alignments to geographical transformations.
+    Quest Generation Logic: 
+        Quest Tempplates: Develop a variety of quest templates that the AI can customize and inject into the game. These templates might include:
+            Fetch Quests: Simple retrieval missions that can lead to unexpected complications.
+            Escort Missions: Protecting a character that reveals important narrative elements as they travel.
+            Discovery Quests: Exploring unknown regions that unlock parts of the world's history or secrets.
+            Diplomatic Missions: Navigating complex negotiations that can alter political landscapes.
+        Quest Modifiers: Variables that the AI uses to modify quests based on current world state, player progress, and previous interactions.
+    Side Quests and Mini-Games: 
+        Side Quests: Create side quests that complement the main story, offer additional challenges, or explore subplots and backstories of NPCs and party members.
+        Mini-Games: Include mini-games that fit within the world’s culture and setting, such as local sports, puzzles, or magical competitions, offering rewards and deeper immersion.
     Dialogue System: 
+        Dynamic Dialogue Trees: Establish a system for dynamic dialogues that change based on the player's knowledge, relationships, and previous choices.
+        Emotional Impact: Dialogues should have emotional impacts, influencing character relationships and player's reputation within the game world.
+        Voice Over Considerations: this would be a new feature for later
 
 6. Art and Audio (if applicable)
     Visual Style: 
-    Audio: 
+    Audio: this would be a new feature for later
 
 7. Technical Specifications
     Software Requirements: 

@@ -1,40 +1,37 @@
 1. Environment Setup
-Install Electron: Set up Electron on your development machine.
-Project Structure: Organize the project directory with folders for assets (like images and scripts), components (UI elements), and services (backend functionalities).
-Version Control: Initialize a Git repository to manage version control and possibly GitHub for online backup and version history.
+Install Electron: Set up Electron on your development machine. ✅
+Project Structure: Organize the project directory with folders for assets (like images and scripts), components (UI elements), and services (backend functionalities). ✅
+Version Control: Initialize a Git repository to manage version control and possibly GitHub for online backup and version history. ✅
 2. Game Design Documentation
-Game Concept: Refine the game concept, including the core gameplay mechanics, story themes, and character roles.
-Character Design: Outline the attributes, skills, and progression rules for player characters and party members.
-World and Setting: Develop the setting, including maps, major locations, and general lore.
-Story Outlines: Create basic story arcs and major quests that will guide the overall narrative.
+Game Concept: Refine the game concept, including the core gameplay mechanics, story themes, and character roles. ✅
+Character Design: Outline the attributes, skills, and progression rules for player characters and party members. ✅
+World and Setting: Develop the setting, including maps, major locations, and general lore. ✅
+Story Outlines: Create basic story arcs and major quests that will guide the overall narrative. ✅
 3. Basic Functionality Development
 Character Creation System:
-Input forms for character attributes (name, class, abilities, etc.).
-Algorithms to calculate derived attributes (like health, mana, etc.).
+Input forms for character attributes (name, class, abilities, etc.). 🔲
+Algorithms to calculate derived attributes (like health, mana, etc.). 🔲
 Simple AI for Party Members:
-Basic decision-making algorithms for simulated actions based on character traits.
+Basic decision-making algorithms for simulated actions based on character traits. 🔲
 Combat Mechanics:
-Basic combat system, including attack rolls, damage calculation, and health management.
+Basic combat system, including attack rolls, damage calculation, and health management. 🔲
 Map and Exploration:
-Basic map interface where players can click to move their character to different points of interest.
+Basic map interface where players can click to move their character to different points of interest. 🔲
 4. AI and Story Integration
-Dialogue System: Implement a simple dialogue system for interactions between characters and NPCs.
-Quest Management: Basic quest system where players can accept, complete, and track quests.
-AI-driven Story Elements: Lay the groundwork for integrating AI into story development, focusing on generating coherent, context-aware narrative responses.
+Dialogue System: Implement a simple dialogue system for interactions between characters and NPCs. 🔲
+Quest Management: Basic quest system where players can accept, complete, and track quests. 🔲
+AI-driven Story Elements: Lay the groundwork for integrating AI into story development, focusing on generating coherent, context-aware narrative responses. 🔲
 5. UI Development
-Main Interface: Design and implement the main game interface, including character stats, inventory, and main menu.
-Character Sheet and Inventory: UI components for displaying character details and managing items.
-Map Interface: Develop a clickable map that players use to navigate different game zones.
+Main Interface: Design and implement the main game interface, including character stats, inventory, and main menu. 🔲
+Character Sheet and Inventory: UI components for displaying character details and managing items. 🔲
+Map Interface: Develop a clickable map that players use to navigate different game zones. 🔲
 6. Testing
-Unit Tests: Write unit tests for individual components (like character creation logic and combat mechanics).
-Functional Testing: Test the basic game flow from character creation to engaging in a simple quest and combat.
+Unit Tests: Write unit tests for individual components (like character creation logic and combat mechanics). 🔲
+Functional Testing: Test the basic game flow from character creation to engaging in a simple quest and combat. 🔲
 7. Iteration and Feedback
-Internal Playtesting: Conduct playtesting sessions to gather feedback on gameplay, UI, and story integration.
-Refinement: Based on feedback, refine gameplay mechanics, UI, and any implemented features.
-Deliverables for Prototype
+Internal Playtesting: Conduct playtesting sessions to gather feedback on gameplay, UI, and story integration. 🔲
+Refinement: Based on feedback, refine gameplay mechanics, UI, and any implemented features. 🔲
+8. Deliverables for Prototype
 A playable version of the game allowing character creation, basic exploration, simple combat, and completing at least one or two quests.
 Basic AI functionality for party member behaviors and simple story elements.
 A stable and navigable UI for the main game elements.
-Next Steps
-Begin Environment Setup: Start by installing and setting up Electron and creating the basic project structure.
-Draft Initial Game Design Document: Outline the key components of your game, including characters, world-building, and storyline.
