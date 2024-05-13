@@ -4,16 +4,16 @@ function getSelectedValues() {
     return { race, cls };
 }
 
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { getSelectedValues }; // Export for testing
+if (typeof document !== 'undefined') {
+    const form = document.getElementById('race-class-form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const { race, cls } = getSelectedValues();
+            console.log('Selected Race:', race, '; Selected Class:', cls);
+            // Further logic to save these choices or pass to the next step
+        });
+    }
 }
 
-// Attach event listener only if document object exists (i.e., in browser or Electron, not Node)
-if (typeof document !== 'undefined') {
-    document.getElementById('race-class-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const { race, cls } = getSelectedValues();
-        console.log('Selected Race:', race, '; Selected Class:', cls);
-        // Logic to save these choices or pass to the next step
-    });
-}
+module.exports = { getSelectedValues }; // Ensure this is at the bottom of your file
