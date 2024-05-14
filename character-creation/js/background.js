@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Fetch the background elements from the JSON file
     fetch('../data/backgrounds.json')
         .then(response => response.json())
         .then(data => {
@@ -38,5 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         console.log('Selected Background:', background);
         // Save background selection or move to the next step
+        // Navigate to physical appearance selection
+        window.location.href = 'appearance.html';
     });
 });
