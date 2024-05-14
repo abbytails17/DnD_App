@@ -1,0 +1,68 @@
+{
+    "occupations": [
+        "Farmer",
+        "Merchant",
+        "Soldier",
+        "Scholar",
+        "Artisan",
+        "Entertainer",
+        "Healer",
+        "Sailor"
+    ],
+    "familyBackgrounds": [
+        "Noble family",
+        "Commoner family",
+        "Orphan",
+        "Raised by single parent",
+        "Raised by extended family",
+        "Adopted"
+    ],
+    "education": [
+        "Formal education in a school or academy",
+        "Apprenticeship with a mentor",
+        "Self-taught",
+        "No formal education"
+    ],
+    "significantLifeEvents": [
+        "Survived a natural disaster",
+        "Witnessed a crime",
+        "Saved a life",
+        "Lost a loved one",
+        "Experienced a major betrayal",
+        "Traveled to a distant land"
+    ],
+    "personalityTraits": [
+        "Brave",
+        "Cautious",
+        "Curious",
+        "Friendly",
+        "Honest",
+        "Independent",
+        "Kind",
+        "Loyal"
+    ],
+    "ideals": [
+        "Justice",
+        "Freedom",
+        "Knowledge",
+        "Power",
+        "Honor",
+        "Charity"
+    ],
+    "bonds": [
+        "Family",
+        "Friends",
+        "Mentor",
+        "Organization",
+        "Home town",
+        "A vow or promise"
+    ],
+    "flaws": [
+        "Greed",
+        "Envy",
+        "Arrogance",
+        "Impulsiveness",
+        "Cowardice",
+        "Distrustfulness"
+    ]
+}
