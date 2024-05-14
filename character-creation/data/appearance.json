@@ -1,0 +1,37 @@
+{
+    "hairColors": [
+        "Black",
+        "Brown",
+        "Blonde",
+        "Red",
+        "Gray",
+        "White"
+    ],
+    "eyeColors": [
+        "Brown",
+        "Blue",
+        "Green",
+        "Gray",
+        "Hazel"
+    ],
+    "skinColors": [
+        "Fair",
+        "Light",
+        "Medium",
+        "Olive",
+        "Brown",
+        "Dark"
+    ],
+    "builds": [
+        "Slender",
+        "Athletic",
+        "Muscular",
+        "Heavyset"
+    ],
+    "genders": [
+        "Male",
+        "Female",
+        "Non-Binary",
+        "Other"
+    ]
+}
