@@ -31,5 +31,4 @@ pids
 .env
 rasa/rasa_env/*
 rasa/.rasa/cache/*
-rasa/models/20240525-204422-offline-buyer.tar.gz
-rasa/models/20240525-205738-blaring-marlin.tar.gz
+rasa/models/*
